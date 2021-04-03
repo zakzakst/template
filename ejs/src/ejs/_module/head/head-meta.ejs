@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<title><%= PAGE_DATA.name %> | <%= SITE_DATA.name %></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="<%= SITE_DATA.description %>">
+<meta name="viewport" content="<%= SITE_DATA.viewport %>">
+<link rel="canonical" href="<%= SITE_DATA.url %>">
+<% if (SITE_DATA.keywords) { -%>
+<meta name="keywords" content="<%= SITE_DATA.keywords %>">
+<% } -%>
+<% if (SITE_DATA.author) { -%>
+<meta name="author" content="<%= SITE_DATA.author %>">
+<% } -%>
+<% if (SITE_DATA.robots) { -%>
+<meta name="robots" content="<%= SITE_DATA.robots %>">
+<% } -%>

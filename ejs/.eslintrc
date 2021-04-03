@@ -11,6 +11,9 @@
         "singleQuote": true,
         "trailingComma": "es5"
       }
+    ],
+    "linebreak-style": [
+      "window"
     ]
   }
 }

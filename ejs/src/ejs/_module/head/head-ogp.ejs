@@ -1,0 +1,10 @@
+<meta property="og:title" content="<%= PAGE_DATA.name %> | <%= SITE_DATA.name %>">
+<meta property="og:url" content="<%= SITE_DATA.url %>">
+<meta property="og:description" content="<%= SITE_DATA.description %>">
+<meta property="og:image" content="<%= SITE_DATA.ogImg %>">
+<meta property="og:site_name" content="<%= SITE_DATA.name %>">
+<meta property="og:locale" content="<%= SITE_DATA.ogLocale %>">
+<meta property="og:type" content="<%= SITE_DATA.ogType %>">
+<% if (SITE_DATA.fbId) { -%>
+<meta property="fb:app_id" content="<%= SITE_DATA.fbId %>">
+<% } -%>
