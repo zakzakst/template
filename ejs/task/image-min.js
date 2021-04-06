@@ -15,7 +15,7 @@ const files = './src/img/**/*.{jpg,jpeg,png,gif,svg}';
 const dist = './dist/img';
 
 /**
- * function
+ * functions
  */
 function IMAGE_MIN() {
   return gulp

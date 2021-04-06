@@ -23,7 +23,7 @@ const dist = './dist';
 const options = require('../html-options');
 
 /**
- * function
+ * functions
  */
 function EJS_BUILD() {
   return gulp

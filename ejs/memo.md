@@ -17,3 +17,5 @@
 - [gulp-html-extend](https://www.npmjs.com/package/gulp-html-extend)
 
 - [Sass から完璧な CSS ファイルを出力するために通したい Gulp のタスク](https://haniwaman.com/gulp-sass/)
+
+- [Browsersync options](https://www.browsersync.io/docs/options)
