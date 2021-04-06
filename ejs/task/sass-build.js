@@ -13,7 +13,7 @@ const files = './src/sass/*.scss';
 const dist = './dist/css';
 
 /**
- * function
+ * functions
  */
 function SASS_BUILD() {
   return gulp.src(files)
