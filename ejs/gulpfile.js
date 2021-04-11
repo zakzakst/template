@@ -12,7 +12,7 @@ const IMAGE_MIN = require('./task/image-min');
 const EJS_BUILD = require('./task/ejs-build');
 const SASS_BUILD = require('./task/sass-build');
 const BROWSER_SYNC = require('./task/browser-sync');
-const WEBPACK = require('./tasks/webpack');
+const WEBPACK = require('./task/webpack');
 
 /**
  * gulp tasks
