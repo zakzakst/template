@@ -4,12 +4,17 @@
  * npm modules
  */
 const gulp = require('gulp');
+const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
+const packageImporter = require('node-sass-package-importer');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const stylelint = require('stylelint');
 
 /**
  * values
  */
-const files = './src/sass/*.scss';
+const files = './src/sass/style.scss';
 const dist = './dist/css';
 
 /**
@@ -17,9 +22,17 @@ const dist = './dist/css';
  */
 function SASS_BUILD() {
   return gulp.src(files)
+    .pipe(plumber())
     .pipe(sass({
-      outputStyle: 'compressed', // compressed, expanded
+      importer: packageImporter({
+        extensions: ['.scss', '.css'],
+      }),
+      outputStyle: 'expanded', // compressed, expanded
     }))
+    .pipe(postcss([
+      autoprefixer(),
+      stylelint(),
+    ]))
     .pipe(gulp.dest(dist));
 }
 
