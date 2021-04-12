@@ -1,24 +1,23 @@
-// eslint-disable no-undef
-
 const TerserPlugin = require('terser-webpack-plugin');
-const environment = process.env.NODE_ENV || 'development';
+// const environment = process.env.NODE_ENV || 'development';
 
 module.exports = {
   entry: {
-    script: './src/js/script.ts',
-    // script: './src/js/script.js',
+    // script: './src/js/script.ts',
+    script: './src/js/script.js',
   },
   resolve: {
     extensions: [
       '.js',
-      '.ts',
+      // '.ts',
     ]
   },
   output: {
     path: `${__dirname}/dist/js`,
     filename: '[name].js'
   },
-  mode: environment, // production development
+  // mode: environment, // production development
+  mode: 'production', // production development
   module: {
     rules: [
       {
@@ -34,13 +33,22 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   test: /\.ts$/,
+      //   use: [
+      //     {
+      //       loader: 'ts-loader',
+      //     }
+      //   ]
+      // },
       {
-        test: /\.ts$/,
-        use: [
-          {
-            loader: 'ts-loader',
-          }
-        ]
+        enforce: 'pre',
+        test: /\.js$/,
+        exclude: /(node_modules|dist)/,
+        loader: 'eslint-loader',
+        options: {
+          fix: true
+        }
       },
     ]
   },

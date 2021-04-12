@@ -1,12 +1,10 @@
 ## ■ やること
 
-- gulp-cached 見てみる
 - stylelint-config-standard
 - 不要なstylelint関連npm module削除
 ‐ タスクをlintとbuildで分ける
-- webpackにeslint組み込む
 - gulpなしの構築も作る（パッケージの更新が止まっているものがでてきている「gulp-postcss」など）
-- .eslintrc.jsと.eslintrcが重複しているので片方削除
+- Prettierとeslintの連携
 
 ## ■ 参考
 
@@ -41,3 +39,9 @@
 - [Sassの@importでreset.cssやnormalize.cssを読み込む](https://qiita.com/irok/items/08a4a015c24a7a83510f)
 
 - [eslintやtslintのメモ](https://blog.local-c.com/archives/2526)
+
+- [Webpack+babel+ESLintで構築するNode.jsプロジェクト](https://qiita.com/TAK_EMI/items/ce81f71abf8e26d0fc61)
+
+- [Step by Stepで始めるESLint](https://qiita.com/howdy39/items/6e2c75861bc5a14b2acf#設定ファイルの種類について)
+
+- [ESLint - Prettier連携のやり方と仕組み](https://qiita.com/ikngtty/items/4df2e13d2fa1c4c47528)
