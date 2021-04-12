@@ -4,6 +4,9 @@
 - stylelint-config-standard
 - 不要なstylelint関連npm module削除
 ‐ タスクをlintとbuildで分ける
+- webpackにeslint組み込む
+- gulpなしの構築も作る（パッケージの更新が止まっているものがでてきている「gulp-postcss」など）
+- .eslintrc.jsと.eslintrcが重複しているので片方削除
 
 ## ■ 参考
 
@@ -36,3 +39,5 @@
 - [stylelintの導入とVS Codeの設定の方法](https://qiita.com/y-w/items/bd7f11013fe34b69f0df)
 
 - [Sassの@importでreset.cssやnormalize.cssを読み込む](https://qiita.com/irok/items/08a4a015c24a7a83510f)
+
+- [eslintやtslintのメモ](https://blog.local-c.com/archives/2526)

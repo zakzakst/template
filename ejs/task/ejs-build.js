@@ -1,5 +1,3 @@
-// eslint-disable no-undef
-
 /**
  * npm modules
  */
@@ -9,7 +7,7 @@ const ejs = require('gulp-ejs');
 const extender = require('gulp-html-extend');
 const htmlhint = require('gulp-htmlhint');
 const htmlbeautify = require('gulp-html-beautify');
-const htmlmin = require('gulp-htmlmin');
+// const htmlmin = require('gulp-htmlmin');
 const rename = require('gulp-rename');
 
 /**
