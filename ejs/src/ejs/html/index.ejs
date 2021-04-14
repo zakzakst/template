@@ -3,7 +3,17 @@
 <!-- @@block = data -->
 <%
   const PAGE_DATA = {
-    name: 'ページ1'
+    name: 'ページ1',
+    breadCrumbs: [
+      {
+        path: '',
+        label: 'HOME',
+      },
+      {
+        path: 'path1/',
+        label: 'path1',
+      }
+    ]
   };
 -%>
 <!-- @@close -->

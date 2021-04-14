@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "gulp webpack",
+    "test": "gulp ejsBuild",
     "lint:css": "stylelint --fix **/*.{css,scss,sass}"
   },
   "author": "",
