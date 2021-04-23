@@ -1,0 +1,5 @@
+<ul>
+<% for (let i = 0; i < PAGE_DATA.breadCrumbs.length; i++) { -%>
+  <li><a href="/<%= PAGE_DATA.breadCrumbs[i].path %>"><%= PAGE_DATA.breadCrumbs[i].label %></a></li>
+<% } %>
+</ul>
