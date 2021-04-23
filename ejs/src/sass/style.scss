@@ -1,4 +1,6 @@
 @charset 'utf-8';
 
-// @import '~normalize.css';
-@import './components/**/*.scss';
+@import './foundation/foundation';
+@import './mixins/mixins';
+@import './module/module';
+@import './plugins/plugins';

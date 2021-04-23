@@ -15,8 +15,7 @@ const config = require('../webpack.config');
  * functions
  */
 function WEBPACK() {
-  return webpackStream(config, webpack)
-    .pipe(gulp.dest(dist));
+  return webpackStream(config, webpack).pipe(gulp.dest(dist));
 }
 
 module.exports = WEBPACK;

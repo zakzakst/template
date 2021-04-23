@@ -1,0 +1,5 @@
+<ul class="breadcrumb">
+  <% for (let i = 0; i < PAGE_DATA.breadcrumbs.length; i++) { -%>
+  <li><a class="breadcrumb__item" href="/<%= PAGE_DATA.breadcrumbs[i].path %>"><%= PAGE_DATA.breadcrumbs[i].label %></a></li>
+  <% } %>
+</ul>

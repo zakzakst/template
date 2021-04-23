@@ -1,56 +1,34 @@
 const TerserPlugin = require('terser-webpack-plugin');
-// const environment = process.env.NODE_ENV || 'development';
+const environment = process.env.NODE_ENV || 'development';
 
 module.exports = {
   entry: {
-    // script: './src/js/script.ts',
     script: './src/js/script.js',
   },
   resolve: {
-    extensions: [
-      '.js',
-      // '.ts',
-    ]
+    extensions: ['.js'],
   },
   output: {
     path: `${__dirname}/dist/js`,
-    filename: '[name].js'
+    filename: '[name].js',
   },
-  // mode: environment, // production development
-  mode: 'production', // production development
+  mode: environment,
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: [
-                '@babel/preset-env',
-              ]
-            }
-          }
-        ]
-      },
-      // {
-      //   test: /\.ts$/,
-      //   use: [
-      //     {
-      //       loader: 'ts-loader',
-      //     }
-      //   ]
-      // },
       {
         enforce: 'pre',
         test: /\.js$/,
         exclude: /(node_modules|dist)/,
         loader: 'eslint-loader',
         options: {
-          fix: true
-        }
+          fix: true,
+        },
       },
-    ]
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+      },
+    ],
   },
   optimization: {
     minimize: true,
@@ -58,7 +36,10 @@ module.exports = {
       new TerserPlugin({
         test: /\.js$/,
         terserOptions: {
-          compress: {drop_console: true},
+          compress: {
+            // drop_console: environment === 'production' ? true : false,
+            drop_console: true,
+          },
         },
       }),
     ],

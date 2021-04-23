@@ -1,5 +1,5 @@
-<%
-  SITE_DATA = {
+module.exports = {
+  SITE_DATA: {
     // META
     lang: 'ja',
     charset: 'utf-8',
@@ -13,7 +13,8 @@
 
     // ICON
     favicon: 'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/favicon.ico',
-    appleIcon: 'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/apple-touch-icon.png',
+    appleIcon:
+      'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/apple-touch-icon.png',
 
     // FACEBOOK
     ogImg: 'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/ogp.png',
@@ -27,6 +28,7 @@
 
     // RICH RESULT
     ldAuthorType: 'Organization',
-    ldAuthorLogo: 'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/apple-touch-icon.png',
-  };
-%>
+    ldAuthorLogo:
+      'https://s-ishizaki.sakura.ne.jp/sample/01/img/common/apple-touch-icon.png',
+  },
+};
