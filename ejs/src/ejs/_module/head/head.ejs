@@ -1,6 +1,3 @@
-<%
-  include('../../_data/site');
--%>
 <!DOCTYPE html>
 <html lang="<%= SITE_DATA.lang %>">
 <head>
@@ -28,6 +25,10 @@
 <!-- ▼▼▼ RICH RESULTS ▼▼▼ -->
 <%- include('./head-rich-results', { SITE_DATA, PAGE_DATA }); -%>
 <!-- ▲▲▲ RICH RESULTS ▲▲▲ -->
+
+<!-- ▼▼▼ LOADER STYLE ▼▼▼ -->
+<%- include('../loader/loader-style'); -%>
+<!-- ▲▲▲ LOADER STYLE ▲▲▲ -->
 
 </head>
 <body>

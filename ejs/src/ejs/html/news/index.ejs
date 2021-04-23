@@ -1,14 +1,18 @@
-<!-- @@master = ../_layout/default.ejs -->
+<!-- @@master = ../../_layout/default.ejs -->
 
 <!-- @@block = data -->
 <%
   const PAGE_DATA = {
-    fileRoot: '',
-    name: 'トップ',
+    fileRoot: '../',
+    name: 'ニュース',
     breadcrumbs: [
       {
         path: '',
         label: 'HOME',
+      },
+      {
+        path: 'news/',
+        label: 'NEWS',
       }
     ]
   };

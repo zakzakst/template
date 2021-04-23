@@ -1,16 +1,24 @@
 <!-- @@placeholder = data -->
-<%- include('../_module/head/head', { PAGE_DATA }); -%>
+<%- include(PAGE_DATA.fileRoot + '../_module/head/head', { PAGE_DATA }); -%>
+
+<!-- ▼▼▼ ページローダー ▼▼▼ -->
+<%- include(PAGE_DATA.fileRoot + '../_module/loader/loader'); -%>
+<!-- ▲▲▲ ページローダー ▲▲▲ -->
 
 <!-- ▼▼▼ ヘッダー ▼▼▼ -->
-<%- include('../_module/header', { PAGE_DATA }); -%>
+<%- include(PAGE_DATA.fileRoot + '../_module/header', { PAGE_DATA }); -%>
 <!-- ▲▲▲ ヘッダー ▲▲▲ -->
+
+<!-- ▼▼▼ パンくず ▼▼▼ -->
+<%- include(PAGE_DATA.fileRoot + '../_module/breadcrumb', { PAGE_DATA }); -%>
+<!-- ▲▲▲ パンくず ▲▲▲ -->
 
 <!-- ▼▼▼ コンテンツ ▼▼▼ -->
 <!-- @@placeholder = content -->
 <!-- ▲▲▲ コンテンツ ▲▲▲ -->
 
 <!-- ▼▼▼ フッター ▼▼▼ -->
-<%- include('../_module/footer', { PAGE_DATA }); -%>
+<%- include(PAGE_DATA.fileRoot + '../_module/footer', { PAGE_DATA }); -%>
 <!-- ▲▲▲ フッター ▲▲▲ -->
 
-<%- include('../_module/foot/foot', { PAGE_DATA }); -%>
+<%- include(PAGE_DATA.fileRoot + '../_module/foot/foot', { PAGE_DATA }); -%>

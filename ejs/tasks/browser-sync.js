@@ -15,14 +15,14 @@ const options = {
 /**
  * functions
  */
-function START(done) {
+function BROWSER_START(done) {
   browsersync.init(options);
   done();
 }
 
-function RELOAD(done) {
+function BROWSER_RELOAD(done) {
   browsersync.reload();
   done();
 }
 
-module.exports = { START, RELOAD };
+module.exports = { BROWSER_START, BROWSER_RELOAD };

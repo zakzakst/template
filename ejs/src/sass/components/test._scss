@@ -1,5 +1,0 @@
-.test {
-  display: flex;
-  opacity: 0.5;
-  color: #fff;
-}

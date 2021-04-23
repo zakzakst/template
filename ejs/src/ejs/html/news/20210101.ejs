@@ -1,0 +1,30 @@
+<!-- @@master = ../../_layout/default.ejs -->
+
+<!-- @@block = data -->
+<%
+  const PAGE_DATA = {
+    fileRoot: '../',
+    name: 'ニュース',
+    breadcrumbs: [
+      {
+        path: '',
+        label: 'HOME',
+      },
+      {
+        path: 'news/',
+        label: 'NEWS',
+      },
+      {
+        path: 'news/20210101.html',
+        label: '20210101のニュース',
+      }
+    ]
+  };
+-%>
+<!-- @@close -->
+
+<!-- @@block = content -->
+<main>
+  <p>my content</p>
+</main>
+<!-- @@close -->

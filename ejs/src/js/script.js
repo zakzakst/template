@@ -1,5 +1,4 @@
 'use strict';
 
-console.log('test');
-const test = 'aaa';
-console.log(test);
+import { sample } from './_module/sample';
+sample();

@@ -1,47 +1,42 @@
-## ■ やること
+## ESLint 関連のモジュール
 
-- stylelint-config-standard
-- 不要なstylelint関連npm module削除
-‐ タスクをlintとbuildで分ける
-- gulpなしの構築も作る（パッケージの更新が止まっているものがでてきている「gulp-postcss」など）
-- Prettierとeslintの連携
+- eslint
+- eslint-loader
+- prettier
+- eslint-config-prettier（ESLint のフォーマット関連のルールを全て無効にする、要は Prettier が整形した箇所に関してエラーを出さなくなる）
+- eslint-plugin-prettier（Prettier を ESLint 上で実行する）
 
-## ■ 参考
+## Babel 関連のモジュール
 
-- [地味に便利！さまざまなプロジェクトに適した HTML のテンプレートを簡単に生成できる -HTML Boilerplates](https://coliss.com/articles/build-websites/operation/work/html-boilerplates.html)
+- @babel/core
+- @babel/preset-env
+- babel-loader
+- core-js@3
 
-- [Prettier 入門 ～ ESLint との違いを理解して併用する～](https://qiita.com/soarflat/items/06377f3b96964964a65d)
+## stylelint 関連のモジュール
 
-- [EJS でテンプレートとデータでファイルを切り分けた開発を行う](https://designsupply-web.com/media/knowledgeside/5907/)
+- stylelint
+- stylelint-scss
+- stylelint-config-recommended
+- stylelint-config-recommended-scss
+- stylelint-config-prettier
+- stylelint-config-recess-order
 
-- [gulp-html-beautify でコンパイル後の HTML を綺麗に整形する方法](https://dezanari.com/gulp-html-beautify/)
+## webpack 関連のモジュール
 
-- [Gulp で HTML を圧縮する](https://www.yoheim.net/blog.php?q=20180304)
+- webpack
+- webpack-stream
+- terser-webpack-plugin
 
-- [gulp-html-extend](https://www.npmjs.com/package/gulp-html-extend)
+## 環境変数関連のモジュール
 
-- [Sass から完璧な CSS ファイルを出力するために通したい Gulp のタスク](https://haniwaman.com/gulp-sass/)
+- cross-env
 
-- [Browsersync options](https://www.browsersync.io/docs/options)
+## SASS 関連のモジュール
 
-- [フロントエンドに ESLint、Prettier、stylelint を導入して快適な開発環境を整えました](http://cluex-developers.hateblo.jp/entry/2019/01/10/171237)
-
-- [ここがすごいぞ！ stylelint！](https://qiita.com/terrierscript/items/ff4f6972c988afbec3a8)
-
-- [Gulp 4 で SCSS + Stylelint + Webpack + ESLint + Edge.js + BrowserSync なフロントエンド環境構築](https://www.hypertextcandy.com/gulp-4-frontend-development-starter)
-
-- [Sass から完璧な CSS ファイルを出力するために通したい Gulp のタスク【WordPress 編】](https://haniwaman.com/gulp-sass/)
-
-- [【2021年最新】Gulp4 + Webpackの超オススメ設定を公開【爆速コーディング環境構築】](https://flex-box.net/gulp-webpack/)
-
-- [stylelintの導入とVS Codeの設定の方法](https://qiita.com/y-w/items/bd7f11013fe34b69f0df)
-
-- [Sassの@importでreset.cssやnormalize.cssを読み込む](https://qiita.com/irok/items/08a4a015c24a7a83510f)
-
-- [eslintやtslintのメモ](https://blog.local-c.com/archives/2526)
-
-- [Webpack+babel+ESLintで構築するNode.jsプロジェクト](https://qiita.com/TAK_EMI/items/ce81f71abf8e26d0fc61)
-
-- [Step by Stepで始めるESLint](https://qiita.com/howdy39/items/6e2c75861bc5a14b2acf#設定ファイルの種類について)
-
-- [ESLint - Prettier連携のやり方と仕組み](https://qiita.com/ikngtty/items/4df2e13d2fa1c4c47528)
+- gulp-sass
+- gulp-sass-glob
+- node-sass-package-importer
+- postcss
+- gulp-postcss
+- autoprefixer
