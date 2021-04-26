@@ -9,6 +9,8 @@ const packageImporter = require('node-sass-package-importer');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const stylelint = require('stylelint');
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
 /**
  * values
@@ -40,6 +42,13 @@ function SASS_BUILD() {
       })
     )
     .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest(dist))
+    .pipe(cleanCSS())
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
     .pipe(gulp.dest(dist));
 }
 

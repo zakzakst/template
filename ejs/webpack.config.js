@@ -11,6 +11,9 @@ module.exports = {
   output: {
     path: `${__dirname}/dist/js`,
     filename: '[name].js',
+    // ライブラリとして出力する場合
+    // library: 'Library',
+    // libraryTarget: 'umd',
   },
   mode: environment,
   module: {
