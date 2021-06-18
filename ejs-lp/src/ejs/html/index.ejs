@@ -1,0 +1,22 @@
+<!-- @@master = ../_layout/default.ejs -->
+
+<!-- @@block = data -->
+<%
+  const PAGE_DATA = {
+    fileRoot: '',
+    name: 'トップ',
+    breadcrumbs: [
+      {
+        path: '',
+        label: 'HOME',
+      }
+    ]
+  };
+-%>
+<!-- @@close -->
+
+<!-- @@block = content -->
+<main>
+  <%- include('../_section/about'); -%>
+</main>
+<!-- @@close -->
