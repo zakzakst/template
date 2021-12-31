@@ -2,21 +2,27 @@
 
 <!-- @@block = data -->
 <%
-  const PAGE_DATA = {
-    fileRoot: '',
-    name: 'トップ',
-    breadcrumbs: [
-      {
-        path: '',
-        label: 'HOME',
-      }
-    ]
-  };
+const PAGE_DATA = {
+  fileRoot: '',
+  name: 'トップ',
+  breadcrumbs: [
+    {
+      path: '',
+      label: 'HOME',
+    }
+  ]
+};
 -%>
 <!-- @@close -->
 
 <!-- @@block = content -->
+<%
+include('../_data/data_1.ejs');
+var SAMPLE_DATA = myData();
+%>
 <main>
+  <p><%= SAMPLE_DATA.pageMeta.home.description %></p>
+  <p><%= SAMPLE_DATA.pageMeta.page1.description %></p>
   <p>my content</p>
 </main>
 <!-- @@close -->
